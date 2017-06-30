@@ -1,0 +1,149 @@
+$font-stack:    Open Sans, sans-serif;
+$primary-green: #159861;
+$secondary-green: #17b070;
+$thirdary-green: #59a618;
+$primary-white: #fff;
+$primary-font: #333 !important;
+$primary-grey: #555;
+$primary-footer: #eee;
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  color: $primary-font;
+  font: 100% $font-stack;
+}
+
+footer {
+  color: $primary-footer;
+}
+
+a {
+  color: $primary-font;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+nav {
+  height: 20vh !important;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.very-small-text {
+  font-size: .8em;
+}
+
+.side-margin {
+  margin-left: 10% !important;
+}
+
+.side-padding {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.right-padding {
+  padding-right: 2%;
+}
+
+.right-line {
+  border-right: .5px solid $primary-footer;
+}
+
+.float-left {
+  float:left;
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: $primary-white;
+  color: $primary-font !important;
+  justify-content: space-between;
+}
+
+.brand-logo {
+  height: 60%; //only use this to change size of logo
+}
+
+.nav-logo {
+  height: 100%;
+}
+
+.nav-ul li:hover {
+  background-color: $secondary-green;
+}
+
+.ul-div {
+  position: absolute;
+  display: flex;
+  align-self: flex-end !important;
+  right: 0;
+  // float: left !important;
+}
+
+.button-collapse {
+  float: right !important;
+  color: $primary-green;
+  top: 30%;
+  height: 100% !important;
+}
+
+.material-icons {
+  color: $primary-green;
+  height: 100vh;
+}
+
+main {
+  height: 80vh;
+}
+
+.left-locator {
+}
+
+.locator-icon {
+  width: 50%;
+  padding-top: 5%;
+}
+.search-submit {
+  width: 100%;
+  background-color: $primary-green;
+  margin-bottom: 10vh;
+}
+
+#map {
+  height: 70vh;
+  width: auto;
+  border: 1px solid black;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-items {
+  line-height: 150%;
+}
+
+.page-footer {
+  background-color: $primary-grey;
+}
+
+.copyright {
+  text-align: center;
+  margin-bottom: 2%;
+}

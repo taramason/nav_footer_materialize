@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GCN w gMaps</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/styles.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+  </head>
+  <body>
+    <!-- large nav dropdown content -->
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="#!">See How Coinstar Works</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Get Cash</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Choose an eGift Card</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Donate to Charity</a></li>
+    </ul>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo"><img class="nav-logo" src="img/coinLogo1.svg" alt=""></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="ul-div">
+          <!-- nav when large -->
+          <ul class="right hide-on-med-and-down nav-ul">
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Cash In Coins<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="sass.html">Special Offers</a></li>
+            <li><a href="badges.html">Get Help</a></li>
+            <li><a href="collapsible.html">About Us</a></li>
+            <li><a href="collapsible.html">Find A Kiosk</a></li>
+            <li><a href="mobile.html">Sign In/Up</a></li>
+          </ul>
+          <!-- nav when small (side nav) -->
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="sass.html">Cash In Coins</a></li>
+            <li class="divider"></li>
+            <li><a href="sass.html" class="side-padding">Get Cash</a></li>
+            <li><a href="sass.html" class="side-padding">Choose an eGift Card</a></li>
+            <li><a href="sass.html" class="side-padding">Donate to Charity</a></li>
+            <li class="divider"></li>
+            <li><a href="sass.html">Special Offers</a></li>
+            <li class="divider"></li>
+            <li><a href="badges.html">Get Help</a></li>
+            <li class="divider"></li>
+            <li><a href="collapsible.html">About Us</a></li>
+            <li class="divider"></li>
+            <li><a href="collapsible.html">Find a Kiosk</a></li>
+            <li class="divider"></li>
+            <li><a href="collapsible.html">Sign In/Up</a></li>
+            <li class="divider"></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- MAIN WAS NOT QUITE THERE... COMMENTED OUT FOR THAT REASON -->
+
+      <!-- <div class="row">
+        <div class="col s12 m6 lg6 left-locator">
+          <div class="center-align">
+            <img class="locator-icon" src="img/locator-icon.png" alt="">
+          </div>
+          <h1 class="center-text">Ready to find a Kiosk?</h1>
+          <h2 class="center-text">Enter your location below:</h2>
+
+
+          <div class="row">
+            <form id="new_gcn_locator" action="/gcn_locators" accept-charset="UTF-8" method="post">
+              <div class="input-field col s12">
+                <input name="utf8" type="hidden" value="&#x2713;" />
+                <input type="hidden" name="authenticity_token" value="YQS8pJ6dJGoNvvWU1vKEorNcbAeevtHntQvNR16eMoSfie8awN2mxz+GBASxwXBiECgAfU9YuGfqf/Xu0q1UBA==" />
+                <input id="gcn_locator_postal_code" type="text" class="validate" class="form-control" placeholder="Postal Code" type="text" value="15222" name="gcn_locator[postal_code]">
+                <label for="gcn_locator_postal_code">Zip Code</label>
+              </div>
+            </form>
+          </div>
+
+          <button class="btn waves-effect waves-light search-submit center-align" type="submit" name="commit" value="Search">
+            Submit
+            <!-- <i class="material-icons right">send</i> -->
+          <!-- </button>
+
+        </div>
+        <!--  END LEFT SD-->
+        <!-- <div class="col s12 m6 lg6 right-locator">
+          <p>map map map</p>
+          <div id="map"></div>
+        </div>
+
+
+        </div>-->
+
+    </main>
+
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col s2 m1">
+            <img src="img/coinLogoCoins.svg" alt="">
+          </div>
+          <div class="col s10 m11 footer-items">
+            <div class="row">
+            <div class="col s12 m6 l3">
+              <ul>
+                <li>SUPPORT</li>
+                <li><a class="grey-text text-lighten-3" href="#!">Contact Us</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Help Center</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Media Center</a></li>
+              </ul>
+            </div>
+            <div class="col s12 m6 l3">
+              <ul>
+                <li class="text-lighten-3">COINSTAR INTERNATIONAL</li>
+                <li><a class="grey-text text-lighten-3" href="#!">Coinstar UK</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Coinstar Ireland</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Coinstar Canada</a></li>
+              </ul>
+            </div>
+            <div class="col s12 m6 l3  company-info">
+              <ul>
+                <li class="text-lighten-3">COMPANY INFORMATION</li>
+                <li><a class="grey-text text-lighten-3" href="#!">Coinstar Jobs</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Financial Institutions</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!"></a></li>
+
+              </ul>
+            </div>
+            <div class="col s12 m6 l3">
+              <ul>
+                <li class="text-lighten-3">GET SOCIAL</li>
+                <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">You Tube</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+
+
+                  <!-- <li><a class="grey-text text-lighten-3" href="#!"><img src="img/icons/facebook.png" alt=""></a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!"><img src="img/icons/twitter.png" alt=""></a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!"><img src="img/icons/youtube.png" alt=""></a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!"><img src="img/icons/facebook.png" alt=""></a></li>
+                 -->
+              </ul>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <div class="container very-small-text">
+          <div class="col s1">
+          </div>
+          <div class="col s11 copyright">
+            Copyright © 2017 Coinstar, LLC. All Rights Reserved. Coinstar and its associated logo are trademarks of Coinstar, LLC.
+            <br>
+                  <br>
+
+            <a class="grey-text text-lighten-4 right-padding right-line" href="#!">
+              Terms of Use
+            </a>
+            <a class="grey-text text-lighten-4 side-padding right-line" href="#!">
+              Additional Terms
+            </a>
+            <a class="grey-text text-lighten-4 side-padding right-line" href="#!">
+              Privacy Policy
+            </a>
+            <a class="grey-text text-lighten-4 side-padding right-line" href="#!">
+              Ad Choices
+            </a>
+            <a class="grey-text text-lighten-4 side-padding" href="#!">
+              California Supply Chains Act
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="app.js"></script>
+    <script>
+
+
+    var map;
+    function addMarker(lat, lng) {
+        var uluru = {lat: lat, lng: lng};
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+
+    function initMap() {
+        geocoder = new google.maps.Geocoder();
+
+        //Below needs to be updated with updated kiosk locator 
+
+        var address = '15222'
+        geocoder.geocode({'address': address}, function (results, status) {
+                if (status == google.maps.GeocoderStatus.OK) {
+                    var lat = '';
+                    var lng = '';
+                    var locations = JSON.parse('[{"kiosk_code":"00024415","mpid":"00024415","address":"318-320 Cedar Ave, Pittsburgh, PA 15212 United States","location_name":"Giant Eagle","latitude":40.4514,"longitude":-80.0009,"distance_miles":"0.47606814686577087","max_voucher_value":1000},{"kiosk_code":"00000328","mpid":"00000328","address":"2021 Wharton Ave., Pittsburgh, PA 15203 United States","location_name":"Giant Eagle","latitude":40.4309,"longitude":-79.9774,"distance_miles":"1.421931925302614","max_voucher_value":1000},{"kiosk_code":"00000336","mpid":"00000336","address":"Parkway Center Mall, Pittsburgh, PA 15220 United States","location_name":"Giant Eagle","latitude":40.4234,"longitude":-80.0407,"distance_miles":"2.998457570219458","max_voucher_value":1000},{"kiosk_code":"00008198","mpid":"00008198","address":"5550 Centre Ave., Pittsburgh, PA 15232 United States","location_name":"Giant Eagle","latitude":40.4563,"longitude":-79.9346,"distance_miles":"3.1532286248429107","max_voucher_value":1000},{"kiosk_code":"00000329","mpid":"00000329","address":"4250 Murray Ave., Pittsburgh, PA 15217 United States","location_name":"Giant Eagle","latitude":40.4226,"longitude":-79.929,"distance_miles":"3.799716834258536","max_voucher_value":1000},{"kiosk_code":"00000326","mpid":"00000326","address":"1901 Murray Ave, Pittsburgh, PA 15217 United States","location_name":"Giant Eagle","latitude":40.4355,"longitude":-79.9223,"distance_miles":"3.8314053783344577","max_voucher_value":1000},{"kiosk_code":"00000318","mpid":"00000318","address":"6320 Shakespeare St, Pittsburgh, PA 15206 United States","location_name":"Giant Eagle","latitude":40.4588,"longitude":-79.921,"distance_miles":"3.8827884803038573","max_voucher_value":1000},{"kiosk_code":"00000331","mpid":"00000331","address":"Brighton Rd \u0026 Bascom St, Pittsburgh, PA 15212 United States","location_name":"Giant Eagle","latitude":40.4899,"longitude":-80.0437,"distance_miles":"3.9416814917086542","max_voucher_value":1000},{"kiosk_code":"00000360","mpid":"00000360","address":"51 Walsh Rd, Pittsburgh, PA 15205 United States","location_name":"Giant Eagle","latitude":40.4397,"longitude":-80.0711,"distance_miles":"4.123882121307342","max_voucher_value":1000},{"kiosk_code":"00007996","mpid":"00007996","address":"420 E Waterfront Dr, Homestead, PA 15120 United States","location_name":"Giant Eagle","latitude":40.4126,"longitude":-79.9098,"distance_miles":"5.015892172020308","max_voucher_value":1000}]')
+
+                    lat = results[0].geometry.location.lat();
+                    lng = results[0].geometry.location.lng();
+
+                    var uluru = {lat: lat, lng: lng};
+                    map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 11,
+                        center: uluru
+                    });
+                    var infowindow = new google.maps.InfoWindow();
+                    var marker, i;
+
+                    for ( i = 0; i < locations.length; i++) {
+                        var storeLoc = {lat: locations[i].latitude, lng: locations[i].longitude};
+                        marker = new google.maps.Marker({
+                            position: storeLoc,
+                            map: map
+                        });
+
+                        var infoWindowContent = "<div style='font-weight: bold; font-size: 16px;'>" + locations[i].location_name + "</div>" +
+                                '<p>' + locations[i].address + '</p>';
+
+                        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                            return function() {
+                                infowindow.setContent(infoWindowContent);
+                                infowindow.open(map, marker);
+                            }
+                        })(marker, i));
+
+                    }
+                }
+            }
+        );
+
+
+    }
+
+
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGkLU5XpofDNgmaZ6tcna_64JBCML8MOc&callback=initMap">
+    </script>
+  </body>
+</html>

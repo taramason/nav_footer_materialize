@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>map</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/styles.css"  media="screen,projection"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+  </head>
+  <body class="kiosk-sel-body">
+
+    <div class="row">
+
+      <div class="col-sm-12 col-md-6 col-lg-6 left-side">
+
+        <div class="loc-image">
+          <img class="locator-icon" src="img/locator-icon.png" alt="">
+        </div>
+        <h1 class="center-text">Ready to find a Kiosk?</h1>
+        <h2 class="center-text">Enter your location below:</h2>
+
+        <div class="form-group row">
+          <label for="example-text-input" class="col-2 col-form-label">Text</label>
+          <div class="col-10">
+            <input class="form-control" type="text" value="15222" id="example-text-input">
+          </div>
+          <button type="submit" class="button btn btn-default">submit</button>
+        </div>
+
+        <!-- <form class="form-inline" id="new_gcn_locator" action="" accept-charset="UTF-8" method="post">
+          <input name="utf8" type="hidden" value="&#x2713;" />
+          <input type="hidden" name="authenticity_token" value="cifz4s7izBDCwM1oXJ1IjldLJB4pBIxBUqUm8tu4yeyMqqBckKJOvfD4PPg7rrxO9D9IZPji5cEN0R5bV4uvbA==" />
+          <input class="form-control" placeholder="Postal Code" type="text" value="15222" name="gcn_locator[postal_code]" id="gcn_locator_postal_code" />
+          <input type="submit" name="commit" value="Search" class="button btn btn-primary" style="border: #58a618, color: #000000; background: #58a618;" />
+        </form> -->
+
+
+        <h2>Get cash for your coins, choose a NO FEE eGift Card option* or donate your coins to charity.</h2>
+        <h3>*NO FEE eGift Card options vary by location and may be temporarily unavailable at some Kroger stores: Kroger, Dillon Food Stores, Food 4 Less, Fred Meyer, Fry’s Food Stores, Jay C Food Store, King Soopers, Ralphs Grocery, Smith’s Food & Drug, Quality Food Centers, and Ruler Foods.</h3>
+        <h1 class="results">Search Results</h1>
+
+
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-6">
+
+        <div id="map"></div>
+
+      </div>
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>
